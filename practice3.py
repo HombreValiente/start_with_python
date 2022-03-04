@@ -41,9 +41,15 @@ t4처럼 괄호를 생략해도 무방하다.
 # print(a)
 
 # 딕셔너리에서 key 사용해 value 얻기
-grade = {'pey': 10, 'julliet': 99}
-print(grade['pey'])
-print(grade['julliet'])
-a = {1: 'a', 2: 'b'}
-print(a[1])
-print(a[2])
+# grade = {'pey': 10, 'julliet': 99}
+# print(grade['pey'])
+# print(grade['julliet'])
+# a = {1: 'a', 2: 'b'}
+# print(a[1])
+# print(a[2])
+
+# 주의사항!
+'''
+Key는 고유한 값이므로 동일한 Key가 존재하면 안된다.
+Key에는 리스트는 쓸 수 없지만 튜플은 가능
+'''
