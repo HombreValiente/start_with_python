@@ -29,13 +29,21 @@ t4처럼 괄호를 생략해도 무방하다.
 # Key에는 변하지 않는 값을 사용하고, value에는 변하는 값과 변하지 않는 값 모두 사용 가능.
 
 # 딕셔터리 쌍 추가, 삭제
-a = {1: 'a'}
-a[2] = 'b' # <--- {2:'b'}쌍 추가
-print(a)
-a['name'] = 'pey'  # <--- {'name':'pey'}
-print(a)
-a[3] = [1,2,3]  # <--- {3: [1,2,3]} 쌍 추가
-print(a)
+# a = {1: 'a'}
+# a[2] = 'b' # <--- {2:'b'}쌍 추가
+# print(a)
+# a['name'] = 'pey'  # <--- {'name':'pey'}
+# print(a)
+# a[3] = [1,2,3]  # <--- {3: [1,2,3]} 쌍 추가
+# print(a)
 
-del a[1]
-print(a)
+# del a[1]
+# print(a)
+
+# 딕셔너리에서 key 사용해 value 얻기
+grade = {'pey': 10, 'julliet': 99}
+print(grade['pey'])
+print(grade['julliet'])
+a = {1: 'a', 2: 'b'}
+print(a[1])
+print(a[2])
