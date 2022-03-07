@@ -53,3 +53,40 @@ t4처럼 괄호를 생략해도 무방하다.
 Key는 고유한 값이므로 동일한 Key가 존재하면 안된다.
 Key에는 리스트는 쓸 수 없지만 튜플은 가능
 '''
+
+# 딕셔너리 관련 함수
+# key 리스트 만들기(keys)  <--- 딕셔너리 안의 key만을 모아서 dict_keys 객체를 돌려준다.
+a = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
+# b = a.keys()
+# print(b)
+# for k in a.keys():
+#     print(k)
+# c = list(a.keys())  # dict_keys 객체를 리스트로 변환시킨다.
+# print(c)
+
+# value 리스트 만들기(values)  <--- 딕셔너리 안의 value만 모아 dict_values 객체를 돌려준다.
+b = a.values()
+print(b)
+# key,value 쌍 얻기(items)
+#  c = a.items()
+# print(c)
+# key:value 쌍 모두 지우기(clear)
+# print(a.clear())
+# key로 value 얻기(get)
+d = a.get('name')
+print(d)
+print(a.get('phone'))
+'''a['nokey]처럼 존재하지 않는 키는 key 오류를 발생시키고
+a.get['nokey']는 None을 돌려준다는 차이가 있다'''
+# print(a.get('nokey'))
+# print(a['nokey'])
+
+# 딕셔너리 안에 찾으려는 key 값이 없을 경우 미리 정해 둔 디폴트 값을 대신 가져오게 하고
+# 싶을 때는 get(x, '디폴트 값')을 사용하면 편리하다.
+# print(a.get('foo', 'bar'))  # <-- a딕셔너리에는 'foo'에 해당하는 값이 없으므로 디폴트 값인 'bar'를 돌려준다.
+
+# 해당 key가 딕셔너리 안에 있는지 조사하기(in)
+# print('name' in a)
+# print('email' in a)
+# 나혼자코딩
+a = {'name':'홍길동', 'birth':'1128', 'age' : '30'}
