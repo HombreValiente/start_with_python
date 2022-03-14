@@ -105,14 +105,14 @@
 # print(c, d)
 
 # 위치 알려주기(index)  # 찾는 문자나 문자열이 없으면 오류
-# a = "Life is too short"
+a = "Life is too short"
 # in1 = a.index('t')
 # # in2 = a.index('k')
 # print(in1)
 
 # 문자열 삽입(join)
-# a = ",".join('abcd')
-# print(a)
+a = ",".join('abcd')
+print(a)
 # b = ",".join(['a', 'b', 'c', 'd'])
 # print(b)
 
@@ -146,9 +146,9 @@
 # print(b)
 
 # 문자열 나누기(split)
-a = "Life is too short"
-b = a.split()   # 공백을 기준으로 문자열을 나눈다
-print(b)
-c = "a:b:c:d"
-d = c.split(":")  # : 기호를 기준으로 문자열을 나눈다
-print(d)
+# a = "Life is too short"
+# b = a.split()   # 공백을 기준으로 문자열을 나눈다
+# print(b)
+# c = "a:b:c:d"
+# d = c.split(":")  # : 기호를 기준으로 문자열을 나눈다
+# print(d)

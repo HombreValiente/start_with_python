@@ -51,9 +51,9 @@ print(a[-1][0])   # <--- ['a', 'b', 'c'] 안에 첫번째 요소를 가져온다
 # a.append([5,6])
 # print(a)
 # 리스트 정렬(sort)
-# a = [1, 4, 3, 2]
-# a.sort()
-# print(a)
+a = [1, 4, 3, 2]
+a.sort()
+print(a)
 # a = ['a', 'c', 'b']
 # a.sort()
 # print(a)
@@ -88,9 +88,9 @@ print(a[-1][0])   # <--- ['a', 'b', 'c'] 안에 첫번째 요소를 가져온다
 # b = a.count(1)
 # print(b)
 # 리스트 확장(extend)  extend(x)에서 x에는 리스트만 올 수 있으며, 원래의 a 리스트에 x리스트를 더하게 된다.
-a = [1, 2, 3]
-a.extend([4, 5])    # extend([4,5])는 a += [4, 5]와 동일하다.
-print(a)
-b = [6, 7]
-a.extend(b)
-print(a)
+# a = [1, 2, 3]
+# a.extend([4, 5])    # extend([4,5])는 a += [4, 5]와 동일하다.
+# print(a)
+# b = [6, 7]
+# a.extend(b)
+# print(a)
