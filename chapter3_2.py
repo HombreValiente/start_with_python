@@ -25,7 +25,7 @@
 # total = 0
 # for score in A:
 #     total += score
-# average = total/10
+# average = total / len(A)
 # print(average) # <-- 79.0
 
 # 6.
