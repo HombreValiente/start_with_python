@@ -73,13 +73,70 @@
 # 파일에 새로운 내용 추가하기
 # 쓰기모드'w'로 파일을 열 때 이미 존재하는 파일을 열면 그 파일의 내용이 모두 사라지게 된다.
 # 원래 있던 값을 유지하면서 새로운 값만 추가해야되는 경우 파일을 추가모드'a'로 열면 된다.
-f = open(r"c:\Users\KIM DONGHYUN\Desktop\doit\새파일.txt", 'a')
-for i in range(11, 20):
-    data = "%d번째 줄입니다.\n" % i
-    f.write(data)
-f.close()
+# f = open(r"c:\Users\KIM DONGHYUN\Desktop\doit\새파일.txt", 'a')
+# for i in range(11, 20):
+#     data = "%d번째 줄입니다.\n" % i
+#     f.write(data)
+# f.close()
 
 # with문과 함께 사용하기
-with open("foo.txt", "w") as f:
-    f.write("Life is too short, you need python")
+# with open("foo.txt", "w") as f:
+#     f.write("Life is too short, you need python")
 # with문을 사용하면 with블록을 벗어나는 순간 열린 파일 객체 f가 자동으로 close된다.
+
+
+# 연습문제
+# 1.
+# def is_odd(number):
+#     if number % 2 == 1:
+#         return True
+#     else:
+#         return False
+# print(is_odd(3))
+
+# 2.
+# def avg_numbers(*args):
+#     result = 0
+#     for i in args:
+#         result += i
+#     return result / len(args)
+
+# a = avg_numbers(1, 2)
+# b = avg_numbers(1, 2, 3, 4, 5)
+# print(a, b)
+
+# 3.
+input1 = input("첫번째 숫자를 입력해주세요")
+input2 = input("두번째 숫자를 입력해주세요")
+total = int(input1) + int(input2)
+print("두 수의 합은 %s입니다." % total)
+
+# 4.
+# print("".join(["you", "need", "python"]))
+
+# 5.
+# f1 = open("test.txt", 'w')
+# f1.write("Life is too short")
+# f1.close()
+
+# f2 = open("test.txt", 'r')
+# data = f2.read()
+# print(data)
+
+# 6.
+# user_input = input("저장할 내용을 입력하세요:")
+# f = open('test.txt', 'a')
+# f.write(user_input)
+# f.write('\n')
+# f.close()
+
+# 7.
+f = open('test.txt', 'r')
+body = f.read()
+f.close()
+
+body = body.replace('java', 'python')
+
+f = open('test.txt', 'w')
+f.write(body)
+f.close()
