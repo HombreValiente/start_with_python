@@ -106,10 +106,10 @@
 # print(a, b)
 
 # 3.
-input1 = input("첫번째 숫자를 입력해주세요")
-input2 = input("두번째 숫자를 입력해주세요")
-total = int(input1) + int(input2)
-print("두 수의 합은 %s입니다." % total)
+# input1 = input("첫번째 숫자를 입력해주세요")
+# input2 = input("두번째 숫자를 입력해주세요")
+# total = int(input1) + int(input2)
+# print("두 수의 합은 %s입니다." % total)
 
 # 4.
 # print("".join(["you", "need", "python"]))
@@ -122,6 +122,7 @@ print("두 수의 합은 %s입니다." % total)
 # f2 = open("test.txt", 'r')
 # data = f2.read()
 # print(data)
+# f2.close()
 
 # 6.
 # user_input = input("저장할 내용을 입력하세요:")
